@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
     <header>
       <app-header></app-header>
     </header>
+      <router-outlet />
   `,
   styles: [],
 })
