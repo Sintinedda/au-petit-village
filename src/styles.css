@@ -1,6 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./assets/css/header.css";
+@import "./assets/css/home.css";
 
-*{
+* {
     margin: 0;
+}
+
+body {
+    background-color: #F9D0A3;
+    width: 100%;
+}
+
+h1,
+h2 {
+    color: #DA001E;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+button {
+    color: #151217;
+    background-color: #FDD90B;
+    border-radius: 8%;
+    border-color: #151217;
+    font-size: 1.3rem;
 }

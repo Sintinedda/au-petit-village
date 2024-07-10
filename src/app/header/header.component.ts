@@ -8,14 +8,14 @@ import { NgOptimizedImage } from '@angular/common';
   template: `
     <div class="header-container" (window:resize)="onResize($event)">
       <div class="header-logo">
-        <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <a routerLink="/home">
           <img src="assets/img/logo.jpg" class="header-img" alt="Logo Au petit village" priority/>
         </a>
       </div>
       <div class="menu-container"> 
         <ul class="menu">
           <li class="burger" (click)="toggleMenu()">
-            <i class="material-icons">{{ isMenuOpen ? "close" : "menu"}}</i>   
+            <i class="material-symbols-outlined">{{ isMenuOpen ? "close" : "menu"}}</i>   
           </li>
           <li class="menu-items" [class.is-open]="isMenuOpen">
             <div class="menu-bar"></div>          
