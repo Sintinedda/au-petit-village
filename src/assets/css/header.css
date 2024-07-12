@@ -13,7 +13,6 @@
 .menu {
     list-style: none;
     padding-right: 5vw;
-    color: #151217;
     font-weight: 600;
 }
 
@@ -36,6 +35,8 @@
    padding: 5vw 3vw; 
    text-align: center;
    margin: auto;
+   color: #151217;
+   text-decoration: none;
 }
 
 .menu-bar {
@@ -45,18 +46,18 @@
     margin: auto;
 }
 
-.header-img,
-.burger,
-.menu-item {
+.burger{
     cursor: pointer;
+    
 }
 
-.menu-item:hover {
+.menu-item:hover,
+.active {
     color: #DA001E;
 }
 
-.active {
-    color: #F9D0A3;
+.menu-item:hover {
+    text-decoration: underline;
 }
 
 @media screen and (min-width:768px) {

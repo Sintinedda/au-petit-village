@@ -1,0 +1,92 @@
+.contact-us {
+    margin-bottom: 50px;
+}
+
+.contact-us-address,
+.contact-us-tel {
+    display: flex;
+    align-items: center;
+}
+.contact-us-tel {
+    margin-top: 10px;
+}
+
+.contact-us-item {
+    margin-left: 10px;
+}
+
+.item-address {
+    font-style: normal;
+}
+
+.item-tel {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-form,
+.contact-form-firstname,
+.contact-form-lastname {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.contact-form-textarea {
+    height: 200px;
+}
+
+.contact-alert {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #da001d9f;
+}
+
+.contact-form-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #FDD90B;
+    color: #151217;
+    border-color: #151217;
+}
+
+.contact-form-btn:disabled {
+    background-color: #fdd90b7c;
+    color: #15121762;
+    border-color: #15121762;
+    border-radius: 5%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .contact-form-name {
+        display: flex;
+    }
+
+    .contact-form-firstname {
+        margin-right: 50px;
+    }
+
+    .input-name {
+        width: 75%;
+    }
+
+    .contact-alert {
+        text-align: left;
+    }
+
+    .input-email,
+    .input-subject {
+        width: 50%;
+    }
+
+    .contact-form-btn {
+        width: 33%;
+    }
+}
+
