@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { NgFor, NgIf } from '@angular/common';
+import { ProductsComponent } from '../products/products.component';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink], 
+  imports: [RouterLink, NgIf, NgFor, ProductsComponent], 
   template: `
     <main>
       <h1 class="home-h1">Au petit village</h1>
@@ -24,20 +27,9 @@ import { RouterLink } from '@angular/router';
       </div>
       <div class="home-products">
         <h2 class="home-h2">Nos produits</h2>
-        <div class="home-products-sort-search">
-          <div class="home-products-sort">
-            <p class="home-products-sort-txt">Tri par prix</p>
-            <div class="home-products-sort-icons">
-              <button class="home-products-sort-btn material-symbols-outlined">arrow_downward</button>
-              <button class="home-products-sort-btn material-symbols-outlined">arrow_upward</button>
-            </div>
+          <div class="products">
+            <app-products></app-products>
           </div>
-          <div class="home-products-search">
-            <input type="text" class="home-products-search-input" placeholder="Rechercher"/> 
-            <button class="home-products-search-btn material-symbols-outlined">search</button>  
-          </div>
-        </div>
-        <ul class="home-products-items" id="products"></ul> 
       </div>
     </main>
   `,

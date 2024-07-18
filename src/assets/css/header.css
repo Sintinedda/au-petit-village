@@ -35,8 +35,6 @@
    padding: 5vw 3vw; 
    text-align: center;
    margin: auto;
-   color: #151217;
-   text-decoration: none;
 }
 
 .menu-bar {
@@ -51,7 +49,6 @@
     
 }
 
-.menu-item:hover,
 .active {
     color: #DA001E;
 }
