@@ -7,7 +7,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   standalone: true,
   imports: [NgOptimizedImage, RouterLink, RouterLinkActive],
   template: `
-    <header>
+    <header id="top">
       <div class="header-container" (window:resize)="onResize($event)">
         <div class="header-logo">
           <a routerLink="/home">

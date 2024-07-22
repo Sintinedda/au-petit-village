@@ -1,9 +1,11 @@
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ProductComponent } from './products/product.component';
+
+const extraOptions: ExtraOptions = { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled'};
 
 export const routes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -14,8 +16,11 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes, extraOptions)], 
     exports: [RouterModule]
 })
 
-export class AppRoutingModule { }
+export class AppRoutingModule {
+    
+ }
+

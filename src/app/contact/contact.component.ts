@@ -10,7 +10,6 @@ import 'dotenv'
   standalone: true,
   imports: [FormsModule, ReactiveFormsModule, GoogleMapsModule, NgIf],
   template: `
-    <main>
       <div class="contact-container">
         <h1 class="contact-h1">Contact</h1>
         <div class="contact-us">
@@ -18,10 +17,12 @@ import 'dotenv'
           <div class="contact-us-items">
             <div class="contact-us-address">
               <span class="material-symbols-outlined">explore_nearby</span>
-              <address class="contact-us-item item-address">
-                Avenue Maréchal Lyautey<br/>
-                20090 Ajaccio, Corse-du-Sud
-              </address>
+              <a class="contact-us-item item-address" href="https://www.google.fr/maps/place/Av.+Mar%C3%A9chal+Lyautey,+20090+Ajaccio/@41.9379198,8.7422233,17z/data=!3m1!4b1!4m6!3m5!1s0x12da69812a2ae02b:0x3be50d500d37db0d!8m2!3d41.9379198!4d8.7448036!16s%2Fg%2F1wjwxqvw?entry=ttu" target="_blank">
+                <address class="contact-us-item item-address">
+                  Avenue Maréchal Lyautey<br/>
+                  20090 Ajaccio, Corse-du-Sud
+                </address>
+              </a>
             </div>
             <p class="contact-us-tel">
               <span class="material-symbols-outlined">call</span>
@@ -67,7 +68,6 @@ import 'dotenv'
           </form>
         </div>
       </div>
-    </main>
   `,
   styles: ``
 })

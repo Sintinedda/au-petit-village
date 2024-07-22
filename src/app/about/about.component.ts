@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <main>
       <div class="about-container">
         <h1 class="about-h1">À propos de nous</h1>
         <p class="about-text">
@@ -15,7 +14,6 @@ import { Component } from '@angular/core';
         </p>
         <img class="about-img" src="assets/img/about.jpg" alt="Diverses figurines d'Astérix et Obélix" />
       </div>
-    </main> 
   `,
   styles: ``
 })
