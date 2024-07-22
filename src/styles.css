@@ -7,6 +7,11 @@
 @import "./assets/css/product.css";
 @import "./assets/css/footer.css"; 
 
+@font-face {
+    font-family: bubble;
+    src: url(../public/assets/fonts/BubbleboddyNeue-Bold\ Trial.ttf);
+}
+
 * {
     margin: 0;
 }
@@ -21,8 +26,10 @@ main {
 }
 
 h1,
-h2 {
+h2,
+th {
     color: #DA001E;
+    font-family: bubble;
 }
 
 h1 {
@@ -43,6 +50,16 @@ td,
 th {
     font-size: 1.2rem;
     color: #151217;
+}
+
+p,
+a,
+li,
+td,
+input,
+label,
+button {
+    font-family: "Comfortaa", sans-serif;
 }
 
 a {

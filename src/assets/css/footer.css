@@ -35,6 +35,10 @@
     margin-right: 10px;
 }
 
+.footer-contact-address {
+    font-style: normal;
+}
+
 .footer-icons {
     display: flex;
     justify-content: space-around;
