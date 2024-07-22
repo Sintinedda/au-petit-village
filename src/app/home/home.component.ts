@@ -9,7 +9,6 @@ import { ProductsComponent } from '../products/products.component';
   standalone: true,
   imports: [RouterLink, NgIf, NgFor, ProductsComponent], 
   template: `
-    <main>
       <h1 class="home-h1">Au petit village</h1>
       <div class="home-about">
         <h2 class="home-h2">Présentation</h2> 
@@ -25,13 +24,12 @@ import { ProductsComponent } from '../products/products.component';
           <a class="home-about-link" routerLink="/about">À propos</a> 
         </button>
       </div>
-      <div class="home-products">
+      <div class="home-products" id="products">
         <h2 class="home-h2">Nos produits</h2>
           <div class="products">
             <app-products></app-products>
           </div>
       </div>
-    </main>
   `,
   styles: ``
 })
